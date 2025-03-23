@@ -1,0 +1,5 @@
+- ドメイン知識
+  - 書籍エンティティは、タイトル、著者、ISBN、出版日、ジャンルの情報を持つ
+  - CRUD操作は、書籍エンティティの作成、読み取り、更新、削除を行う
+  - JWT認証は、APIへのアクセスを保護するために使用する
+  - client/main.goは、CreateBook、GetBook、UpdateBook、DeleteBookのすべてのgRPCエンドポイントを呼び出す

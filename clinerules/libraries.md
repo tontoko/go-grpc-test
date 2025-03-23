@@ -1,0 +1,11 @@
+- go-grpc-test/go.mod
+  - 依存ライブラリのバージョン管理ファイル
+- 使用ライブラリ
+  - gin
+    - HTTPフレームワーク
+  - gRPC
+    - gRPCフレームワーク
+  - JWT
+    - JWT認証ライブラリ
+  - sqlite3
+    - SQLiteデータベースドライバー

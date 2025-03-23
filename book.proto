@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option go_package = "./;book";
+
+service BookService {
+  rpc CreateBook (CreateBookRequest) returns (Book);
+  rpc GetBook (GetBookRequest) returns (Book);
+  rpc UpdateBook (UpdateBookRequest) returns (Book);
+  rpc DeleteBook (DeleteBookRequest) returns (Empty);
+}
+
+message Book {
+  string title = 1;
+  string author = 2;
+  string isbn = 3;
+  string publication_date = 4;
+  string genre = 5;
+}
+
+message CreateBookRequest {
+  string title = 1;
+  string author = 2;
+  string isbn = 3;
+  string publication_date = 4;
+  string genre = 5;
+}
+
+message GetBookRequest {
+  string isbn = 1;
+}
+
+message UpdateBookRequest {
+  string title = 1;
+  string author = 2;
+  string isbn = 3;
+  string publication_date = 4;
+  string genre = 5;
+}
+
+message DeleteBookRequest {
+  string isbn = 1;
+}
+
+message Empty {}
