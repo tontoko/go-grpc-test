@@ -8,7 +8,8 @@ RUN go mod download && go mod verify
 
 COPY . .
 
+RUN go install github.com/air-verse/air@latest
 RUN go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 
-CMD ["go", "run", "server/main.go"]
+CMD ["air"]

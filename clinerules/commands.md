@@ -1,3 +1,5 @@
+airのインストール: go install github.com/cosmtrek/air@latest
+
 - make docker-build
   - Dockerイメージをビルドする
 - make docker-up
